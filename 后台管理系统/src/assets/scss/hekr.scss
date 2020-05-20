@@ -1,0 +1,96 @@
+// 公共样式
+
+// 按钮样式
+.hekr-btn {
+  width: 138px;
+}
+
+// card操作区域
+.hk-card-handle {
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  .btns {
+    .hekr-btn {
+      margin-left: 20px;
+    }
+  }
+  .hekr-card {
+    box-shadow: none;
+    border: none;
+    .hk-card-body {
+      padding: 0;
+    }
+  }
+}
+// tag
+.hekr-tag {
+  width:100px;
+  height: 24px;
+  line-height: 24px;
+  color: $primary;
+  text-align: center;
+  background: rgba(0, 91, 234, .2);
+  font-size: 12px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+// 列表搜索区域样式
+.hekr-search-area {
+  padding: 0 20px;
+  font-size: 14px;
+  color: $info;
+  background-color: $white;
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  .hekr-search-item {
+    padding: 20px 0;
+    & + .hekr-search-item {
+      border-top: 1px dashed $color-border;
+    }
+    .el-input__inner,
+    .el-range-input {
+      border: 1px solid $color-border;
+      &:focus,
+      &.is-active {
+        border-color: $primary;
+      }
+    }
+    .el-range-input,
+    .el-range-input:focus {
+      border: none;
+    }
+    .el-range-separator {
+      padding: 0;
+      color: $info;
+      width: 16px;
+    }
+    .el-input {
+      width: 228px;
+    }
+    .el-select {
+      .el-input {
+        width: 178px;
+      }
+    }
+    .item {
+      display: inline-block;
+      margin-right: 20px;
+      border-radius: 6px;
+      background-color: #ffffff;
+      .label {
+        width: 100px;
+      }
+      &:first-child {
+        background-color: transparent;
+      }
+      &.fn-right {
+        margin: 0;
+      }
+    }
+  }
+}

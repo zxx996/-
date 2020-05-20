@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Alibaba-PuHuiTi-Heavy';
+  src: url('~@/assets/font/Alibaba-PuHuiTi-Heavy.otf')
+}
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eff3f6;
+}
+
+p {
+  margin: 0;
+}
+
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .el-pager li {
+  background-color: #f0f2f5;
+}
+
+.el-table th {
+  font-weight: normal;
+  font-size: 14px;
+  color: #131528;
+  background-color: rgb(245, 245, 245);
+}
+
+.mce-flow-layout-item.mce-last {
+  display: none;
+}
+
+.hk-table {
+  .el-button {
+    min-width: auto;
+  }
+}
+
+.el-range-editor--small .el-range-separator {
+  width: auto;
+}
+
+.el-loading-mask {
+  z-index: 500;
+  &.is-fullscreen {
+    z-index: 3000;
+  }
+}

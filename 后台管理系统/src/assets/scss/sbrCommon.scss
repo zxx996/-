@@ -1,0 +1,143 @@
+.operation { // 表格操作栏样式
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .operationClassName {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 100%;
+    background: #fff;
+    border: 1px solid #1868eb;
+    color: #1868eb;
+
+    :hover {
+      padding: 7px;
+      border-radius: 100%;
+      color: #fff;
+      background: #1868eb;
+    }
+  }
+
+  .operation-del {
+    border: 1px solid #ff3f3f;
+    color: #ff3f3f;
+
+    :hover {
+      padding: 7px;
+      border-radius: 100%;
+      color: #fff;
+      background: #ff3f3f;
+    }
+  }
+}
+
+.table-toolbar { // 表格搜索，工具栏
+  padding: 20px 0;
+
+  &-title {
+    height: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #172434;
+  }
+
+  &-btns {
+    text-align: right;
+  }
+}
+
+.table-title {
+  font-size: 18px;
+  color: #131528;
+  padding-bottom: 40px;
+}
+
+.table-search {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+
+  .el-cascader,
+  .search-label,
+  .el-select,
+  .el-input,
+  .hk-search-title {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .hk-search{
+    .el-form-item{
+      margin: 0!important;
+    }
+
+  }
+}
+
+.add-user-top { // 编辑新增样式
+  padding: 40px 100px;
+  width: 100%;
+  height: 180px;
+  background-image: linear-gradient(90deg, #46a7fb 0%, #246de5 100%);
+  .app-breadcrumb {
+    a {
+      color: rgba($color: #ffffff, $alpha: 0.8);
+      font-size: 14px;
+    }
+    .el-breadcrumb__item {
+      .no-redirect {
+        color: rgba($color: #ffffff, $alpha: 0.6);
+      }
+    }
+  }
+}
+.user-card {
+  margin: 0 100px 30px;
+  .user-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #131528;
+  }
+  .tree {
+    min-height: 320px;
+    padding: 40px;
+    background: #f7f7f8;
+    .treeAll {
+      background-color: #f7f7f8;
+    }
+  }
+  .checkbox-group {
+    border: 1px solid #ccc;
+    padding: 0 20px;
+    min-height: 186px;
+  }
+  .user-button {
+    width: 136px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border: 1px solid rgba(23, 36, 52, 0.4);
+    cursor: pointer;
+  }
+  .sure {
+    border: none;
+    color: #fff;
+    background: #1868eb;
+  }
+  .el-form {
+    .el-form-item__label {
+      line-height: 10px;
+    }
+  }
+}
